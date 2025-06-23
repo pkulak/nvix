@@ -9,7 +9,10 @@
       bigfile.enabled = true;
       scroll.enabled = false; # if i ever find soln for <https://github.com/folke/snacks.nvim/issues/1360>
       quickfile.enabled = true;
-      indent.enabled = true;
+      indent = {
+        enabled = true;
+        only_scope = true;
+      };
       words.enabled = true;
       picker =
         let

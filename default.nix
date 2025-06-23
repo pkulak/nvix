@@ -42,6 +42,7 @@
         core = default;
         bare = check (nvix "bare") "Checks if bare builds fine";
         full = check (nvix "full") "Checks if full builds fine";
+        phil = check (nvix "phil") "Checks if phil builds fine";
       };
       # Lets you run `nix run .` to start nixvim
       packages = rec {
@@ -49,6 +50,7 @@
         core = default;
         bare = package (nvix "bare") "Minimal utility set (Good for servers to quick spin)";
         full = package (nvix "full") "Full utility set (Full Set contains tex utilities)";
+        phil = package (nvix "phil") "Phil's utiility set (Phil's favorite utilities)";
       };
     };
 }

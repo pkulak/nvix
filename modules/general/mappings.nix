@@ -1,4 +1,9 @@
-{ config, helpers, ... }:
+{
+  config,
+  helpers,
+  pkgs,
+  ...
+}:
 let
   inherit (config.nvix.mkKey) mkKeymap mkKeymapWithOpts wKeyObj;
   # Set of General mappings not dependent on any plugins
@@ -35,6 +40,7 @@ let
     (mkKeymap "i" "<c-s>" "<esc>:w ++p<cr>" "Save file")
     (mkKeymap "i" "<a-j>" "<esc>:m .+1<cr>==gi" "Move Line Down")
     (mkKeymap "i" "<a-k>" "<esc>:m .-2<cr>==gi" "Move Line Up")
+    (mkKeymap "i" "jx" "<esc>:x<cr>" "Save and close")
   ];
 
   normal = [
@@ -121,6 +127,12 @@ let
       expr = true;
     })
 
+    # all my goodies here
+    (mkKeymap "n" "=j" ":%!${pkgs.jq}/bin/jq<CR>:set syntax=json<CR>" "Format as JSON")
+    (mkKeymap "n" "=x" ":%!${pkgs.libxml2}/bin/xmllint --format -<CR>:set syntax=xml<CR>"
+      "Format as XML"
+    )
+    (mkKeymap "n" "=s" ":%sort<CR>" "Sort")
   ];
 in
 {

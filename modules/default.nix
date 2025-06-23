@@ -13,6 +13,7 @@
     lualine = ./lualine;
     copilot = ./copilot;
     explorer = ./explorer;
+    oil = ./oil;
     firenvim = ./firenvim;
     dashboard = ./dashboard;
     aesthetics = ./aesthetics;
