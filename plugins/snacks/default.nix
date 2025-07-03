@@ -29,7 +29,10 @@ in
       bigfile.enabled = true;
       scroll.enabled = false;
       quickfile.enabled = true;
-      indent.enabled = true;
+      indent = {
+        enabled = true;
+        only_scope = true;
+      };
       words.enabled = true;
       statuscolumn.enabled = true;
       dashboard.enabled = lib.mkDefault false;

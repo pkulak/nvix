@@ -5,10 +5,39 @@
       enable = true;
       settings = {
         flavor = "mocha";
+        background = {
+          light = "macchiato";
+          dark = "mocha";
+        };
         italic = true;
         bold = true;
         dimInactive = false;
         transparent_background = true;
+        term_colors = true;
+        default_integrations = true;
+        integrations = {
+          blink_cmp = true;
+          noice = true;
+          nvim_surround = true;
+          gitsigns = true;
+          which_key = true;
+          treesitter = true;
+          treesitter_context = true;
+          render_markdown = true;
+          snacks = true;
+          native_lsp = {
+            enabled = true;
+            inlay_hints = {
+              background = true;
+            };
+            underlines = {
+              errors = [ "underline" ];
+              hints = [ "underline" ];
+              information = [ "underline" ];
+              warnings = [ "underline" ];
+            };
+          };
+        };
       };
     };
   };

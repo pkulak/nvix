@@ -58,7 +58,7 @@ in
     virtualedit = "block";
     winminwidth = 5;
     fileencoding = "utf-8";
-    list = true;
+    list = false;
     smoothscroll = true;
     autoread = true;
     fillchars = {

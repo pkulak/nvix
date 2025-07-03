@@ -18,7 +18,7 @@ let
 
     # UI and appearance
     self.nvixPlugins.lualine
-    self.nvixPlugins.neo-tree
+    self.nvixPlugins.oil
     self.nvixPlugins.firenvim
 
     # Code editing and syntax
@@ -29,7 +29,6 @@ let
 
     # Productivity
     self.nvixPlugins.autosession
-    self.nvixPlugins.ai
 
     # Dashboard (Auto session works so rarely i see this.)
     self.nvixPlugins.dashboard
