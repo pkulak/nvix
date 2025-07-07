@@ -1,6 +1,6 @@
 {
   plugins = {
-    mini-ai.enable = true;
+    # mini-ai.enable = true;
     treesitter = {
       enable = true;
       settings = {
