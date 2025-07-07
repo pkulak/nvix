@@ -16,7 +16,8 @@ in
           "<C-h>" = [ "snippet_backward" "fallback" ];
           "<C-u>" = [ "scroll_documentation_up" "fallback" ];
           "<C-d>" = [ "scroll_documentation_down" "fallback" ];
-          "<cr>" = [ "select_and_accept" "fallback" ];
+          "<CR>" = [ "select_and_accept" "fallback" ];
+          "<TAB>" = [ "select_and_accept" "fallback" ];
         };
       };
     };
