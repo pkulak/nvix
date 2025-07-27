@@ -39,9 +39,15 @@ in
               '';
           }
           {
+            icon = "󰈔";
+            desc = " New";
+            key = "n";
+            action = "enew";
+          }
+          {
             icon = "󰿅";
             desc = " Quit";
-            key = "<leader>q";
+            key = "q";
             action = "quitall!";
           }
         ];
