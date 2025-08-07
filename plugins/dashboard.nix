@@ -48,6 +48,7 @@ in
             icon = "󰿅";
             desc = " Quit";
             key = "q";
+            key_format = "-> %s";
             action = "quitall!";
           }
         ];
