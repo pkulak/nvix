@@ -1,9 +1,7 @@
 {
-  plugins = {
-    lsp.servers.hls = {
-      enable = true;
-      installGhc = false;
-    };
-    haskell-scope-highlighting.enable = true;
+  plugins.lsp.servers.hls = {
+    enable = true;
+    installGhc = false;
+    packageFallback = true;
   };
 }

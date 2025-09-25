@@ -13,6 +13,9 @@ let
     self.nvixPlugins.snacks
   ];
   coreModules = bareModules ++ [
+    # noice for cmdline
+    self.nvixPlugins.noice
+
     # Git and version control
     self.nvixPlugins.git
 
@@ -29,9 +32,6 @@ let
 
     # Productivity
     self.nvixPlugins.autosession
-
-    # Dashboard (Auto session works so rarely i see this.)
-    self.nvixPlugins.dashboard
   ];
   fullModules = coreModules ++ [
     self.nvixPlugins.tex
